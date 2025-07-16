@@ -1,2 +1,3 @@
 # toDoList
-En este proyecto estoy practicando mis conocimientos en diseño ux/ui, desarrollador font-end (HTML, CSS, Javascript) y el uso de framework Angular.
+En este proyecto estoy practicando mis conocimientos en:
+Diseño ux/ui, Desarrollador Front-end (HTML, CSS, Javascript) y el uso de framework Angular.
