@@ -13,31 +13,28 @@
 <body>
     <header>
         <img src="asset/Logo.svg" alt="logo de Cero Pendientes" class="header-logo">
-        <div class="header--btns">
-            <button class="header-btn btn-plus"><img src="asset/circlePlus-ico.svg" alt="icono agregar"></button>
-        <button class="header-btn btn-lookFor"><img src="asset/lookFor-ico.svg" alt="icono buscar"></button>
-        </div>
-        
+        <button class="lookFor--btn"><img src="asset/lookFor-ico.svg" alt="icono buscar"></button>  
     </header>
     <main>
-        <form action="" class="form--pendientes">
-            <h1>Pendientes</h1>
-            <div class="form-inputs">
-                <input type="checkbox" class="input-checkbox">
-                <input type="text" placeholder="Nuevo pendiente" class="input-text">
-                <span aria-hidden="true" class="task-division"></span>
+        <section class="form-section">
+            <form action="" class="form--pendientes">
+                <input type="text" placeholder="Nuevo pendiente" class="input-text" id="task-input">
+                <button type="submit" class="submit--btn" id="add-btn">Agregar</button>
+            </form>
+            <div class="progress-container">
+                <h1>Avance</h1>
+                <p>20/20</p>
             </div>
-        </form>
-        <div class="section-division"></div>
-        <form action="" class="form--realizados">
-            <h1>Realizados</h1>
-            <div class="form-inputs">
-                <input type="checkbox" class="input-checkedbox">
-                <input type="text" placeholder="Nuevo pendiente" class="input-text">
-                <span aria-hidden="true" class="task-division"></span>
+            <div class="task-container">
+                <ul id="task-list">
+                    
+                </ul>
+
             </div>
-            <button type="submit" class="input-btn-submit">Guardar cambios</button>
-        </form>
+            
+
+        </section>
+        
     </main>
     <footer>
         <div class="column1">
@@ -52,4 +49,5 @@
     </footer>
     
 </body>
+<script src="script.js"></script>
 </html>

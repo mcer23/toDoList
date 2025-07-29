@@ -16,7 +16,9 @@ html{
     font-family: "Josefin Sans", sans-serif;
     background-color:#F8F8F8 ;
     overflow-x:hidden;}
- 
+body{
+    min-height: 100vh;
+} 
 
     /* Header */
 header{
@@ -27,84 +29,78 @@ header{
     margin-bottom:34px ;
 }
 .header-logo{
-    width:169px;
-    height: 29.64;
+    width:176px;
+    height: 29.64px;
     
 }
-.header--btns{
-    position: fixed;
-    right: 0;
-    display: flex;
-    flex-direction: row;
-    margin-right:22px ;
-    align-items: center;
-}
-.header-btn{
-    display:inline-flex;
+.lookFor--btn{
     background-color: transparent;
     border: none;
+}
+.lookFor--btn span{
+    display: flex;
     width: 22px;
     height: 22px;
 }
-.btn-plus{
-    margin-right:6px ;
-}
-
 /* Main */
-h1{
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-left: 21px;
-}
-.form-inputs{
-    border-bottom: 1px solid rgba(124, 127, 125, 20%);
-}
-.form--pendientes h1{color: var(--ligthGreen);}
-.form--realizados h1{color: var(--darkGreen);}
 
-.input-checkbox, .input-checkedbox{
-    margin-left: 27px;
-    margin-top: 19px;
-    width:15px;
-    height: 15px;
-    border-radius: 3px;
-}
-.input-text{
-    border:none;
-    background-color: transparent;
-    width:169px;
-    height: 12px;
-    padding-left: 10px;
-     
-}
-.section-division{
-    margin: 30px 0;
-}
-
-.form--realizados{border-top: 1px solid rgba(0,75,35,50%);}
-    
-.form--realizados h1{
-    margin-top: 30px;
-}
-
-.input-btn-submit{
+.form-section .form--pendientes{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:0 auto;
+}
+
+.input-text{
+    width: 310px;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 19px;
+}
+.submit--btn{
+    display: flex;
     border: none;
-    background-color:var(--ligthGreen);
-    color: white;
-    text-align: center;
-    font-size: 1.4rem;
-    width: 182px;
+    background-color: var(--ligthGreen);
+    width:149px;
     height: 26px;
     border-radius: 15px;
-    margin-top: 49px;
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+    
 }
-.input-btn-submit:hover{
+.submit--btn:hover{
     background-color: var(--darkGreen);
 }
+.progress-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 261px;
+    height: 45px;
+    border: 1px solid var(--ligthGreen);
+    border-radius: 10px;
+    gap:10px;
+    margin:0 auto;
+    color: var(--darkGreen);
+}
+.progress-container h1, .progress-container p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.task-container{
+    margin-left:34px;
+    color: var(--darkGreen);
+    font-size: 1.4rem;
+    margin-top: 47px;
+}
+
 /* Footer */
 footer{
     margin-top: 20%;
@@ -140,3 +136,4 @@ footer{
     margin-top:10px ;
     
 }
+/* Desktop */
