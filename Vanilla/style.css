@@ -30,18 +30,9 @@ header{
 }
 .header-logo{
     width:176px;
-    height: 29.64px;
-    
+    height: 29.64px; 
 }
-.lookFor--btn{
-    background-color: transparent;
-    border: none;
-}
-.lookFor--btn span{
-    display: flex;
-    width: 22px;
-    height: 22px;
-}
+
 /* Main */
 
 .form-section .form--pendientes{
@@ -99,7 +90,57 @@ header{
     color: var(--darkGreen);
     font-size: 1.4rem;
     margin-top: 47px;
+    display: flex;
+    align-items: center;
+    position:relative;
+    padding-bottom: 10px;
 }
+ #task-list{  /* removing li styles and extra padding/margin*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#task-list li{
+    width: 340px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:8px;   
+}
+
+#task-list .task-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    word-wrap: break-word;
+}
+#task-list li .checkbox{
+    border: 1px solid var(--gray);
+    border-radius: 3px;
+}
+#task-list li.completed .task-info {
+    text-decoration:line-through;
+    color: var(--gray);
+
+}
+.task--buttons{
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+}
+
+.task--buttons button{
+    background-color: transparent;
+    border: none;
+}
+.task--buttons button:hover{
+    transform: scale(1.2);
+}
+.buttons-ico img{
+    width:16px;
+    height: 16px;
+}
+
 
 /* Footer */
 footer{
@@ -137,3 +178,146 @@ footer{
     
 }
 /* Desktop */
+@media(min-width:1000px){
+    /* Header */
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 31px 22px 0 23px;
+        margin-bottom:34px ;
+    }
+    .header-logo{
+        width:304px;
+        height: 44.91px;
+        
+    }
+    /* Main */
+   
+
+    .form-section .form--pendientes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap:20px;
+    }
+
+    .input-text{
+        width: 671px;
+        height: 32px;
+        margin-bottom: 19px;
+    }
+    .submit--btn{
+        display: flex;
+        width:212px;
+        height: 32px;
+        border-radius: 15px;
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 29px;
+        
+    }
+    .progress-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 406px;
+        height: 70px;
+        border: 1px solid var(--ligthGreen);
+        border-radius: 20px;
+        gap:10px;
+        margin:0 auto;
+        color: var(--darkGreen);
+    }
+    .progress-container h1, .progress-container p{
+        font-size: 2.6rem;
+        font-weight: 500;
+    }
+    .task-container{
+        width:90%;
+        margin-left:34px;
+        font-size: 2.4rem;
+        margin-top: 47px;
+        display: flex;
+        align-items: center;
+        position:relative;
+        padding-bottom: 10px;
+    }
+    #task-list{  /* removing li styles and extra padding/margin*/
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #task-list li{
+        width: 785px;
+        margin-left:114px ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap:15px;   
+    }
+
+    #task-list li .checkbox{
+        width: 20px;
+        height: 20px;
+    }
+    .task--buttons{
+        margin-left: auto;
+        display: flex;
+        gap: 10px;
+        right: 20px;
+    }
+    .task--buttons button{
+        background-color: transparent;
+        border: none;
+    }
+    .task--buttons button:hover{
+        transform: scale(1.2);
+    }
+    .buttons-ico img{
+        width: 35px;
+        height: 35px;
+    }
+    /* Footer */
+    footer{
+        margin-top: 30%;
+        border-top: 1px solid rgba(124, 127, 125, 50%);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        padding: 20px 22px;
+    }
+    .column1{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top:10px ;
+        gap: 6px;
+    }
+    .column1 a{
+        font-size: 2rem;
+        text-decoration: none;
+        color: var(--darkGreen);
+    }
+    .column1 a:hover{
+        text-decoration: underline;
+    }
+    .column2{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .column2 img{
+        width: 226px;
+        height: 64px;
+        margin-top:10px ;
+        
+    }
+
+   
+}
